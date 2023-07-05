@@ -20,5 +20,7 @@ API 호출결과를 확인하기 위해 JSON 포맷터를 활용하는 실습을
 기존의 편집기에서 호출된 결과는 한 눈에 잘 보이지 않고 오류를 검증하기 어려웠다.
 하지만 [JSON 포맷터](https://jsonformatter.curiousconcept.com/)를 사용하면
 값을 JSON 형태에 맞춰서 보여준다.
-[그림 1]
-[그림 2]
+
+![JSON Validation 1](https://github.com/whxogus215/Naver-API-Prac/assets/70999462/c7da8ee2-d981-4f45-8d8d-dc7dcbc673b1)
+![JSON Validation 2](https://github.com/whxogus215/Naver-API-Prac/assets/70999462/554b6207-2907-4db2-a613-c01338c81c90)
+
