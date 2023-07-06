@@ -16,6 +16,7 @@ public class SearchImageReq {
     private String sort = "sim";
     private String filter = "all";
 
+    // UriComponentsBuilder의 queryparams()가 매개변수로 MultiValueMap 타입을 받기 때문에 만든 메서드
     public MultiValueMap<String, String> toMultiValueMap() {
         var map = new LinkedMultiValueMap<String, String>();
 
