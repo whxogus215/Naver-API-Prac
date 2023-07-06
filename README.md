@@ -8,7 +8,8 @@
 4. [JSON 포맷터](#json-포맷터)
 5. [요구사항 분석의 필요성](#요구사항-분석의-필요성)
 6. [Swagger 활용](#swagger)
-7. [Spring과 Vue.js의 연동방법]
+7. [Spring과 Vue.js의 연동방법](#spring과-vuejs의-연동방법)
+8. [아키텍쳐 구조](#아키텍쳐-구조)
 
 ### DTO 필요성
 DB에서 조회한 엔티티 정보들 중에서는 실제 클라이언트에 필요한 정보와 그렇지 않은 정보가 섞여있을 수 있다.
@@ -21,7 +22,8 @@ DB에서 조회한 엔티티 정보들 중에서는 실제 클라이언트에 �
 해당 프로젝트는 네이버 검색 API를 통해 JSON 데이터를 가져오기 때문에 별도의 클라이언트 객체가 존재한다.
 또한 네이버 API와 통신하기 위해 별도의 dto를 생성하여 관리하고 있다. 이 dto의 필드들 또한 네이버 API 문서에서
 명시한 필드들과 타입 및 변수명이 동일하다.
-[그림 API 요청]
+![API 요청](https://github.com/whxogus215/Naver-API-Prac/assets/70999462/2698a5c6-6880-4316-bd22-6fbc8c9560df)
+
 ```java
 @Data
 @NoArgsConstructor
@@ -47,7 +49,8 @@ public class SearchImageReq {
     }
 }
 ```
-[그림 응답]
+![API 응답](https://github.com/whxogus215/Naver-API-Prac/assets/70999462/16de8184-1d68-4502-b58e-a7d349634e21)
+
 ```java
 @Data
 @NoArgsConstructor
@@ -354,3 +357,11 @@ Swagger라는 것이 무엇인지만 알고 있었고 실제로 사용해본 적
 ```
 해당 코드에서 알 수 있듯이, 특정 버튼을 눌렀을 때 어떤 URL 경로를 호출하는지, 어떤 호출 메서드를 사용하는지 까지
 정의가 되어 있다. 따라서 우리가 설계한 API는 단순히 사용자에게 보여주기 위한 API로 네이버 API와 마찬가지의 역할을 한다.
+
+### 아키텍쳐 구조
+![패스트 캠퍼스 실습 예제 아키텍쳐](https://github.com/whxogus215/Naver-API-Prac/assets/70999462/dbf27b36-ddd1-41d6-8e8b-9d3df3633558)
+
+출처 :  
+HTML - https://www.flaticon.com/kr/free-icon/html_180891?related_id=172519&origin=search  
+JSON - https://www.flaticon.com/kr/free-icon/json-file_6394065?term=json&page=1&position=3&origin=search&related_id=6394065
+
